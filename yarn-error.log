@@ -1,0 +1,108 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\chand\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\Microsoft VS Code\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\chand\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\OpenJDK\openjdk-8u272-b10\bin;C:\Program Files\PuTTY\;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\chand\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\chand\AppData\Local\Programs\Python\Python38-32\;C:\Python\Python38\Scripts\;C:\Python\Python38\;C:\Users\chand\AppData\Local\Microsoft\WindowsApps;C:\Users\chand\go\bin;C:\Hugo\bin;C:\Users\chand\Documents\flutter\bin;C:\Users\chand\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@material-ui/core/-/core-3.9.3.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\chand\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141289:19)
+      at Object.onceWrapper (node:events:509:28)
+      at ClientRequest.emit (node:events:390:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:763:9)
+      at Object.onceWrapper (node:events:509:28)
+      at TLSSocket.emit (node:events:402:35)
+      at TLSSocket.Socket._onTimeout (node:net:501:8)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  {
+    "name": "argon-dashboard-react",
+    "version": "1.2.1",
+    "description": "React version of Argon Dashboard by Creative Tim",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/creativetimofficial/argon-dashboard-react.git"
+    },
+    "keywords": [
+      "react",
+      "reactjs",
+      "argon",
+      "argon-react",
+      "dashboard",
+      "dashboard-react",
+      "argon-dashboard",
+      "argon-dashboard-react"
+    ],
+    "author": "Creative Tim",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
+    },
+    "homepage": "https://demos.creative-tim.com/argon-dashboard-react/",
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+      "compile:scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css",
+      "minify:scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.min.css --output-style compressed",
+      "map:scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/argon-dashboard-react.scss src/assets/css/argon-dashboard-react.css --source-map true",
+      "build:scss": "npm run compile:scss && npm run minify:scss && npm run map:scss"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "5.15.3",
+      "bootstrap": "4.6.0",
+      "chart.js": "2.9.4",
+      "classnames": "2.3.1",
+      "mdbreact": "^5.2.0",
+      "moment": "2.29.1",
+      "node-sass": "6.0.1",
+      "node-sass-package-importer": "5.3.2",
+      "nouislider": "15.2.0",
+      "react": "17.0.2",
+      "react-chartjs-2": "2.11.1",
+      "react-copy-to-clipboard": "5.0.3",
+      "react-datetime": "3.0.4",
+      "react-dom": "17.0.2",
+      "react-router-dom": "5.2.0",
+      "react-scripts": "4.0.3",
+      "reactstrap": "8.9.0"
+    },
+    "devDependencies": {
+      "gulp": "4.0.2",
+      "gulp-append-prepend": "1.0.9"
+    },
+    "optionalDependencies": {
+      "eslint-plugin-flowtype": "5.8.0",
+      "jquery": "3.6.0",
+      "typescript": "4.3.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
